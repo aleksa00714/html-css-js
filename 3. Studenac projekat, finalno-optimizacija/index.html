@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Studenac je usamljena vikendica u srcu borove šume na planini Subjel, u blizini Divčibara"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon 64.png" />
+    <link rel="apple-touch-icon" href="img/favicon 180 apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Studenac &mdash; Odmorite um i telo</title>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img src="img/studenac-logo.png" class="logo" alt="studenac logo" />
+      </a>
+
+      <nav class="navigation-main">
+        <ul class="navigation-main-list">
+          <li>
+            <a class="navigation-main-link" href="#uputstvo"
+              >Kako rezervisati</a
+            >
+          </li>
+          <li>
+            <a class="navigation-main-link" href="#proizvodi">Proizvodi</a>
+          </li>
+          <li><a class="navigation-main-link" href="#galerija">Galerija</a></li>
+          <li><a class="navigation-main-link" href="#cenovnik">Cenovnik</a></li>
+          <li>
+            <a class="navigation-main-link nav-btn-cta" href="#cta">Prijava</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mob-nav">
+        <ion-icon class="icon-mob-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mob-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Odmor na planini u srcu borove šume - život u harmoniji sa
+              prirodom
+            </h1>
+            <p class="hero-description">
+              Iako ste okruženi borovom šumom i netaknutom prirodom, internet
+              signal je odličan – repetitor za 4G mrežu se nalazi baš na brdu
+              gde je vikendica. Idealno za one koji žele da pobegnu iz grada,
+              ali ostanu povezani kada je potrebno.
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-small"
+              >Započnite avanturu</a
+            >
+            <a href="#uputstvo" class="btn btn--outline"
+              >Pročitajte više &darr;</a
+            >
+            <div class="zadovoljni-gosti">
+              <div class="zadovoljni-gosti-imgs">
+                <img src="img/customers/customer-1.jpg" alt="Slika musterije" />
+                <img src="img/customers/customer-2.jpg" alt="Slika musterije" />
+                <img src="img/customers/customer-3.jpg" alt="Slika musterije" />
+                <img src="img/customers/customer-4.jpg" alt="Slika musterije" />
+                <img src="img/customers/customer-5.jpg" alt="Slika musterije" />
+                <img src="img/customers/customer-6.jpg" alt="Slika musterije" />
+              </div>
+              <p class="zadovoljni-gosti-text">
+                <span>100+</span> zadovoljnih gostiju!
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <!-- fallback za IE i stariji safari koji ne podrzavaju webp -->
+              <source srcset="img/heromoj.webp" type="image/webp" />
+              <source srcset="img/heromojmax.png" type="image/png" />
+              <img
+                src="img/heromojmax.png"
+                class="hero-img"
+                alt="Priroda sa borovom sumom"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured">Kompanije sa kojima sarađujemo</h2>
+          <div class="logos">
+            <img
+              src="img/logos/booking.webp"
+              class="featured-logo-img"
+              alt="booking logo"
+            />
+            <img
+              src="img/logos/airbnb.webp"
+              class="featured-logo-img"
+              alt="airbnb logo"
+            />
+            <img
+              src="img/logos/Agoda_Logo_2022.svg.webp"
+              class="featured-logo-img"
+              alt="agoda logo"
+            />
+            <img
+              src="img/logos/vrbo.webp"
+              class="featured-logo-img"
+              alt="vrbo logo"
+            />
+            <img
+              src="img/logos/TripAdvisor-01.webp"
+              class="featured-logo-img"
+              alt="tripadvisor logo"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-uputstvo" id="uputstvo">
+        <div class="container">
+          <span class="subheading">Kako rezervisati</span>
+          <h2 class="heading-secondary">
+            Rezervišite svoj boravak u 3 jednostavna koraka
+          </h2>
+        </div>
+        <div class="container grid grid--2-cols">
+          <!-- KORAK 01 -->
+          <div class="uputstvo-text-box">
+            <p class="uputstvo-number">01</p>
+            <h3 class="heading-tertiary">Proverite dostupnost i cenu</h3>
+            <p class="uputstvo-text">
+              Pogledajte u kalendaru da li je vikendica slobodna za vaše željene
+              datume. Cena zavisi od dužine boravka — što duže ostajete, cena po
+              noći je niža.
+            </p>
+          </div>
+          <div class="uputstvo-img-box">
+            <img
+              src="img/app/app-screen-1-moj.webp"
+              class="uputstvo-img"
+              alt="proverite zauzece slika"
+            />
+          </div>
+          <!-- KORAK 02 -->
+          <div class="uputstvo-img-box">
+            <img
+              src="img/app/app-screen-2-moj.webp"
+              class="uputstvo-img"
+              alt="pozovite moj broj telefona slika"
+            />
+          </div>
+          <div class="uputstvo-text-box">
+            <p class="uputstvo-number">02</p>
+            <h3 class="heading-tertiary">Pozovite ili rezervišite online</h3>
+            <p class="uputstvo-text">
+              Pozovite me direktno na broj telefona za dogovor i potvrdu
+              rezervacije. Ako vam je lakše, možete sve završiti i putem sajta,
+              brzo i jednostavno.
+            </p>
+          </div>
+          <!-- KORAK 03 -->
+          <div class="uputstvo-text-box">
+            <p class="uputstvo-number">03</p>
+            <h3 class="heading-tertiary">Pratite uputstva za dolazak</h3>
+            <p class="uputstvo-text">
+              Nakon potvrde, dobićete precizna i proverena uputstva kako da
+              najlakše stignete do vikendice. Samo ih pažljivo pratite i
+              uživanje može da počne.
+            </p>
+          </div>
+          <div class="uputstvo-img-box">
+            <img
+              src="img/app/app-screen-3-moj.webp"
+              class="uputstvo-img"
+              alt="lokacija slika"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-proizvodi" id="proizvodi">
+        <div class="container">
+          <span class="subheading text-center">meni</span>
+          <h2 class="heading-secondary text-center">
+            Domaći proizvodi koje možete kupiti kod nas
+          </h2>
+        </div>
+        <div class="container grid grid--3-cols margin-bottom-medium">
+          <div class="proizvod-kartica">
+            <img
+              src="img/proizvodi/meal-1.webp"
+              class="proizvod-img"
+              alt="slika obroka"
+            />
+            <div class="proizvod-text-box">
+              <div class="tags">
+                <span class="tag">Doručak</span>
+                <span class="tag">Ručak</span>
+              </div>
+              <p class="proizvod-naziv">Domaća hrana</p>
+              <ul class="proizvod-opisi">
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="scale-outline"
+                  ></ion-icon>
+                  <span>za <strong>1</strong> osobu</span>
+                </li>
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="thumbs-up-outline"
+                  ></ion-icon>
+                  <span>Ocena <strong>4.6</strong> (77)</span>
+                </li>
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="leaf-outline"
+                  ></ion-icon>
+                  <span>Domaće i organski</span>
+                </li>
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="home-outline"
+                  ></ion-icon>
+                  <span>Besplatna dostava</span>
+                </li>
+              </ul>
+              <div class="proizvod-cena">
+                <strong>3-5€</strong>
+                <a href="#" class="btn btn--buy">u korpu</a>
+              </div>
+            </div>
+          </div>
+          <div class="proizvod-kartica">
+            <img
+              src="img/proizvodi/rakija2.webp"
+              class="proizvod-img"
+              alt="slika rakije od sljive"
+            />
+            <div class="proizvod-text-box">
+              <div class="tags">
+                <span class="tag">Šljiva</span>
+              </div>
+              <p class="proizvod-naziv">Domaća rakija</p>
+              <ul class="proizvod-opisi">
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="scale-outline"
+                  ></ion-icon
+                  ><span>Količina <strong>1000</strong> ml</span>
+                </li>
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="thumbs-up-outline"
+                  ></ion-icon>
+                  <span>Ocena <strong>4.8</strong> (39)</span>
+                </li>
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="leaf-outline"
+                  ></ion-icon>
+                  <span>Domaće i organski</span>
+                </li>
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="home-outline"
+                  ></ion-icon>
+                  <span>Besplatna dostava</span>
+                </li>
+              </ul>
+              <div class="proizvod-cena">
+                <strong>10€</strong>
+                <a href="#" class="btn btn--buy">u korpu</a>
+              </div>
+            </div>
+          </div>
+          <div class="proizvod-kartica">
+            <img
+              src="img/proizvodi/med1.jpg"
+              class="proizvod-img"
+              alt="slika tegle sa medom"
+            />
+            <div class="proizvod-text-box">
+              <div class="tags">
+                <span class="tag">Bagrem</span>
+                <span class="tag">Lipa</span>
+              </div>
+              <p class="proizvod-naziv">Domaći med</p>
+              <ul class="proizvod-opisi">
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="scale-outline"
+                  ></ion-icon
+                  ><span>Količina <strong>950</strong> g</span>
+                </li>
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="thumbs-up-outline"
+                  ></ion-icon>
+                  <span>Ocena <strong>4.9</strong> (45)</span>
+                </li>
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="leaf-outline"
+                  ></ion-icon>
+                  <span>Domaće i organski</span>
+                </li>
+                <li class="proizvod-opis">
+                  <ion-icon
+                    class="icon-proizvodi"
+                    name="home-outline"
+                  ></ion-icon>
+                  <span>Besplatna dostava</span>
+                </li>
+              </ul>
+              <div class="proizvod-cena">
+                <strong>10€</strong>
+                <a href="#" class="btn btn--buy">u korpu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container ceo-jelovnik">
+          <a href="#" class="link">Pogledajte ceo jelovnik &rarr;</a>
+        </div>
+      </section>
+      <section class="section-galerija" id="galerija">
+        <div class="testimonials-box">
+          <span class="subheading">Utisci gostiju</span>
+          <h2 class="heading-secondary">Pogled od kog zastaje dah</h2>
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                src="img/customers/ar.jpg"
+                class="testimonial-img"
+                alt="slika gosta"
+              />
+              <blockquote class="testimonial-text">
+                Domaćin je jako ljubazan. Smeštaj je čist, udoban i poseduje sve
+                potrebno za boravak. Lokacija je fantastična a pogled koji se
+                pruža iz smeštaja je neopisiv!
+              </blockquote>
+              <p class="testimonial-gost">&mdash; Ivana</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="img/customers/booking.webp"
+                class="testimonial-img"
+                alt="slika gosta"
+              />
+              <blockquote class="testimonial-text">
+                Tražili smo mesto za kratki odmor u prirodi i to smo i dobili!
+                Studenac je doslovno na kraju sveta, daleko od gradske buke i
+                gungule, pravi raj za prirodni reset!
+              </blockquote>
+              <p class="testimonial-gost">&mdash; Nikola</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="img/customers/booking.webp"
+                class="testimonial-img"
+                alt="slika gosta"
+              />
+              <blockquote class="testimonial-text">
+                U samoj okolini ima nekoliko staza sa šetnju, a kolima se za
+                nekih 20 minuta stiže do Divčibara odakle takođe postoji veliki
+                broj staza za šetnju!
+              </blockquote>
+              <p class="testimonial-gost">&mdash; Mladen</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="img/customers/ar.jpg"
+                class="testimonial-img"
+                alt="slika gosta"
+              />
+              <blockquote class="testimonial-text">
+                Imali smo sreću da je noć bila bez oblaka tako da smo mogli da
+                vidimo cak i Mlečni put na zvezdanom nebu. Definitivno ćemo doći
+                ponovo u jesenjem periodu!
+              </blockquote>
+              <p class="testimonial-gost">&mdash; Jakup</p>
+            </figure>
+          </div>
+        </div>
+        <div class="galerija">
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/1.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/2.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/3.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/4.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/5.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/6.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/7.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/8.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/9.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/10.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/11.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+          <figure class="galerija-item">
+            <img
+              src="img/gallery/12.jpg"
+              class="galerija-img"
+              alt="slika iz galerije"
+            />
+          </figure>
+        </div>
+      </section>
+      <section class="section-cenovnik" id="cenovnik">
+        <div class="container">
+          <span class="subheading">Cenovnik</span>
+          <h2 class="heading-secondary">
+            Mnoge povoljnosti za goste koji ostaju duže
+          </h2>
+        </div>
+        <div class="container grid grid--3-cols margin-bottom-medium">
+          <div class="cenovnik-kartica cenovnik-classic">
+            <p class="plan-naziv">3 do 6 noćenja</p>
+            <p class="plan-cena">40<span>€</span></p>
+            <p class="plan-text">po noćenju! Uštedite do 60e!</p>
+            <div class="cenovnik-rezervisi">
+              <a href="#" class="btn btn--full">Rezervišite</a>
+            </div>
+          </div>
+          <div class="cenovnik-kartica cenovnik-classic">
+            <p class="plan-naziv">1 ili 2 noćenja</p>
+            <p class="plan-cena">50<span>€</span></p>
+            <p class="plan-text">po noćenju! Osetite život na selu!</p>
+            <div class="cenovnik-rezervisi">
+              <a href="#" class="btn btn--full">Rezervišite</a>
+            </div>
+          </div>
+          <div class="cenovnik-kartica cenovnik-best">
+            <p class="plan-naziv">7+ noćenja</p>
+            <p class="plan-cena">30<span>€</span></p>
+            <p class="plan-text">po noćenju! Uštedite do 300e!</p>
+            <div class="cenovnik-rezervisi">
+              <a href="#" class="btn btn--full">Rezervišite</a>
+            </div>
+          </div>
+        </div>
+        <div class="container grid">
+          <aside class="cenovnik-detalji">
+            7 dana pre dolaska je potrebno uplatiti avans u iznosu od 30%.
+            Ukoliko gost ne dođe avans neće biti vraćen.
+          </aside>
+        </div>
+        <div class="container grid grid--4-cols">
+          <div class="specifikacije">
+            <ion-icon name="paw-outline" class="specifikacije-icon"></ion-icon>
+            <p class="specifikacije-naslov">Dozvoljeni ljubimci</p>
+            <p class="specifikacije-tekst">
+              Vaši četvoronožni prijatelji su dobrodošli! Uživajte zajedno u
+              prirodi bez brige.
+            </p>
+          </div>
+          <div class="specifikacije">
+            <ion-icon
+              class="specifikacije-icon"
+              name="water-outline"
+            ></ion-icon>
+            <p class="specifikacije-naslov">Izvorska voda za piće</p>
+            <p class="specifikacije-tekst">
+              Prirodna, planinska, izvorska voda za piće. Testirana i hladna kao
+              led.
+            </p>
+          </div>
+          <div class="specifikacije">
+            <ion-icon
+              class="specifikacije-icon"
+              name="cellular-outline"
+            ></ion-icon>
+            <p class="specifikacije-naslov">Pokrivenost mrežom</p>
+            <p class="specifikacije-tekst">
+              Repetitor za 4G signal nalazi se baš na ovom brdu — stabilna i
+              jaka mreža.
+            </p>
+          </div>
+          <div class="specifikacije">
+            <ion-icon class="specifikacije-icon" name="walk-outline"></ion-icon>
+            <p class="specifikacije-naslov">Obeležene staze</p>
+            <p class="specifikacije-tekst">
+              Istražite šumu i planinske predele — staze su jasno označene i
+              prilagođene.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Popusti za stare goste!</h2>
+              <p class="cta-text">
+                Hvala vam što ste već bili naši gosti! Unesite svoj e-mail i
+                ostvarite ekskluzivne popuste za ponovni dolazak vas ili vaših
+                prijatelja!
+              </p>
+              <form class="cta-form" name="prijava" netlify>
+                <div>
+                  <label for="ime-prezime">Ime i prezime</label>
+                  <input
+                    id="ime-prezime"
+                    type="text"
+                    placeholder="Nikola Nikolić"
+                    name="puno-ime"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">E-mail adresa</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="nikola@gmail.com"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="ljubimci">Da li imate kućne ljubimce?</label>
+                  <select id="ljubimci" name="ljubimci" required>
+                    <option value="">Izaberite jednu opciju</option>
+                    <option value="ne">Ne</option>
+                    <option value="da">Da</option>
+                  </select>
+                </div>
+                <button class="btn btn--form">Prijavite se</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="dete u vecnjaku"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img src="img/studenac-logo.png" class="logo" alt="studenac logo" />
+          </a>
+          <ul class="social-links">
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; <span class="godina">2025</span> by Studenac, Inc.
+            All rights reserved.
+          </p>
+        </div>
+        <div class="adresa-col">
+          <p class="footer-heading">Kontaktirajte nas</p>
+          <address class="kontakti">
+            <p class="adresa">Tometino polje, Kosjerić 31260, Srbija</p>
+            <p>
+              <a href="tel:+381-60-0783-878" class="footer-link"
+                >+381-60-0783-878</a
+              ><br />
+              <a href="mailto:aleksa.panto@gmail.com" class="footer-link"
+                >aleksa.panto@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <div class="nav-col">
+          <p class="footer-heading">Vaš nalog</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Prijava</a></li>
+            <li><a href="#" class="footer-link">Registracija</a></li>
+            <li><a href="#" class="footer-link">Izmena rezervacije</a></li>
+            <li><a href="#" class="footer-link">Moje porudžbine</a></li>
+          </ul>
+        </div>
+        <div class="nav-col">
+          <p class="footer-heading">O vikendici</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Lokacija i kako doći</a></li>
+            <li><a href="#" class="footer-link">Galerija</a></li>
+            <li><a href="#" class="footer-link">Domaćin</a></li>
+            <li><a href="#" class="footer-link">Uslovi korišćenja</a></li>
+          </ul>
+        </div>
+        <div class="nav-col">
+          <p class="footer-heading">Informacije</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Česta pitanja</a></li>
+            <li><a href="#" class="footer-link">Meni domaće hrane</a></li>
+            <li><a href="#" class="footer-link">Porudžbine</a></li>
+            <li><a href="#" class="footer-link">Politika otkazivanja</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

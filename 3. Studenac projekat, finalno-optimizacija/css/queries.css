@@ -1,0 +1,340 @@
+/************************************/
+/* 1344 = 84*16 izmedju 1366px(hd ready) i 1300(hero width) */
+/************************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+  }
+
+  .galerija {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/************************************/
+/* ispod 1200px */
+/************************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px */
+    font-size: 56.25%;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiery {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.4rem 2.8rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .navigation-main-list {
+    gap: 3.2rem;
+  }
+
+  .testimonials-box {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/************************************/
+/* ispod 1000px */
+/************************************/
+
+@media (max-width: 62.5em) {
+  html {
+    /* 8px font */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .zadovoljni-gosti {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .hero-description {
+    font-size: 1.7rem;
+  }
+
+  .uputstvo-number {
+    font-size: 7.4rem;
+  }
+
+  .proizvod-text-box {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-galerija {
+    grid-template-columns: 1fr;
+  }
+
+  .galerija {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid {
+    column-gap: 2.8rem;
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.6rem;
+  }
+
+  /* NAVIGACIJA ZA TELEFONE */
+  .btn-mob-nav {
+    display: block;
+    z-index: 999;
+  }
+
+  .navigation-main {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* pomeram u desno da bih dobio slide in sa desne strane */
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease-in;
+
+    /* HIDE NAVIGATION VISUALLY */
+    opacity: 0;
+
+    /* HIDE FROM MOUSE AND KEYBOARD */
+    pointer-events: none;
+
+    /* HIDE FROM SCREEN READERS */
+    visibility: hidden;
+  }
+
+  .nav-open .navigation-main {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mob-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mob-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .navigation-main-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .navigation-main-link:link,
+  .navigation-main-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/************************************/
+/* ispod 735px */
+/************************************/
+
+@media (max-width: 46em) {
+  /* .grid--3-cols, */
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .proizvod-kartica,
+  .cenovnik-classic {
+    grid-column: span 4;
+  }
+
+  .proizvod-kartica:last-child,
+  .cenovnik-best {
+    grid-column: 3 / 7;
+  }
+
+  /* .proizvod-kartica:last-child {
+    grid-column: 1 / -1;
+    margin: 0 auto;
+    max-width: 40rem;
+    width: 100%;
+  } */
+
+  .galerija {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .uputstvo-img {
+    width: 60%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .adresa-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .featured-logo-img {
+    height: 3rem;
+  }
+}
+
+/************************************/
+/* ispod 544px */
+/************************************/
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .uputstvo-img {
+    width: 35%;
+  }
+
+  .proizvod-kartica,
+  .proizvod-kartica:last-child,
+  .cenovnik-classic,
+  .cenovnik-best {
+    grid-column: span 1;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .featured-logo-img {
+    height: 2rem;
+  }
+
+  .uputstvo-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .uputstvo-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .uputstvo-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .galerija {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cenovnik-best::after {
+    right: -9%;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+}
